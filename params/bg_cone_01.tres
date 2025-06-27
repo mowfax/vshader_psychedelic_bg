@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="BGShaderCone" load_steps=4 format=3 uid="uid://yxphqgpqynk7"]
+
+[ext_resource type="Texture2D" uid="uid://sls67mwf3sq1" path="res://screenshots/bg_cone_01.png" id="1_mikju"]
+[ext_resource type="Script" uid="uid://ht0cad48d7kf" path="res://classes/bgshader_cone.gd" id="2_4ihsf"]
+[ext_resource type="Shader" uid="uid://bf004g1tno6d1" path="res://shaders/bgshader_cones_01.tres" id="3_xhvb4"]
+
+[resource]
+script = ExtResource("2_4ihsf")
+shader_file = ExtResource("3_xhvb4")
+description = ""
+screenshot = ExtResource("1_mikju")
+center_position = Vector2(0.5, 0.08)
+color_1 = Color(1, 0.490196, 0, 1)
+color_2 = Color(0, 0.490196, 1, 1)
+color_3 = Color(1, 0.490196, 1, 1)
+brightness_col_1 = 1.0
+brightness_col_2 = 1.0
+brightness_col_3 = 0.81
+brightness_pre_merge = 0.55
+brightness_post_merge = 0.9
+op_1_add_divide_max = 0
+op_2_add_divide_subtract = 0
+direction = -1
+speed = 0.05
+amount = 20.0
+width = 0.013
+sharpness = 1.021
+displacement = 0.21
+saturation = 0.9

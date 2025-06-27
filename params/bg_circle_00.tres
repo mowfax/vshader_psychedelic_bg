@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="BGShaderCircle" load_steps=4 format=3 uid="uid://bds5pfbbogqdb"]
+
+[ext_resource type="Texture2D" uid="uid://dd1n3ga5bb8f" path="res://screenshots/bg_circle_00.png" id="1_01jm3"]
+[ext_resource type="Script" uid="uid://c56giejyu7arf" path="res://classes/bgshader_circle.gd" id="1_nocqm"]
+[ext_resource type="Shader" uid="uid://ceefqv1dsq40p" path="res://shaders/bgshader_circle_01.tres" id="2_4gyrh"]
+
+[resource]
+script = ExtResource("1_nocqm")
+spiral_mode = 0
+shader_file = ExtResource("2_4gyrh")
+description = ""
+screenshot = ExtResource("1_01jm3")
+center_position = Vector2(0.5, 0.5)
+color_1 = Color(1, 0.490196, 0, 1)
+color_2 = Color(0, 0.490196, 1, 1)
+color_3 = Color(1, 0.490196, 1, 1)
+brightness_col_1 = 1.0
+brightness_col_2 = 1.0
+brightness_col_3 = 1.0
+brightness_pre_merge = 0.7
+brightness_post_merge = 0.75
+op_1_add_divide_max = 0
+op_2_add_divide_subtract = 0
+direction = 1
+speed = 0.2
+amount = 6.0
+width = 0.0
+sharpness = 1.0
+displacement = 0.26
+saturation = 1.0

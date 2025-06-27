@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dadjqv060o3wy"]
+
+[ext_resource type="Shader" uid="uid://ceefqv1dsq40p" path="res://shaders/bgshader_circle_01.tres" id="1_bkp1e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y0upk"]
+shader = ExtResource("1_bkp1e")
+shader_parameter/Op2AddDivideSubtract = 0
+shader_parameter/Op1AddDivideMax = 0
+shader_parameter/Color1 = Color(1, 0.490196, 0, 1)
+shader_parameter/CenterPosition = Vector2(0.5, 0.5)
+shader_parameter/SpiralMode = 0
+shader_parameter/Direction = 1.0
+shader_parameter/Speed = 0.2
+shader_parameter/Amount = 6.0
+shader_parameter/Width = 0.0
+shader_parameter/Sharpness = 1.0
+shader_parameter/BrightnessPreMerge = 0.7
+shader_parameter/BrightnessCol1 = 1.0
+shader_parameter/Color2 = Color(0, 0.490196, 1, 1)
+shader_parameter/Displacement = 0.26
+shader_parameter/BrightnessCol2 = 1.0
+shader_parameter/Color3 = Color(1, 0.490196, 1, 1)
+shader_parameter/BrightnessCol3 = 1.0
+shader_parameter/BrightnessPostMerge = 0.75
+shader_parameter/Saturation = 1.0
+
+[node name="Background" type="Control"]
+clip_contents = true
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="BGShader" type="ColorRect" parent="."]
+texture_filter = 2
+material = SubResource("ShaderMaterial_y0upk")
+clip_contents = true
+layout_mode = 1
+offset_right = 1920.0
+offset_bottom = 1920.0

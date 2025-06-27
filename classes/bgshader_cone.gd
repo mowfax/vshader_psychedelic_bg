@@ -1,0 +1,2 @@
+class_name BGShaderCone
+extends BGShader
