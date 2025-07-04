@@ -321,21 +321,21 @@ linked_parent_graph_frame = 178
 linked_parent_graph_frame = 178
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_vba5c"]
-size = Vector2(884, 608)
+size = Vector2(884, 322)
 title = "Speed, Direction and Time"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(32, 156, 75, 33, 31)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_ca3en"]
-size = Vector2(1284, 466)
+size = Vector2(1284, 222)
 title = "Define Shape"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(40, 161, 30, 29, 22)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_p57qt"]
-size = Vector2(604, 392)
+size = Vector2(604, 282)
 title = "Displacement of the three parts"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -343,7 +343,7 @@ attached_nodes = PackedInt32Array(160, 159)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_j0nm3"]
 linked_parent_graph_frame = 171
-size = Vector2(1684, 397)
+size = Vector2(1684, 122)
 title = "Cone 3"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -351,7 +351,7 @@ attached_nodes = PackedInt32Array(46, 154, 151, 147, 143, 142)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_6ofk1"]
 linked_parent_graph_frame = 171
-size = Vector2(1444, 397)
+size = Vector2(1444, 122)
 title = "Cone 1"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -359,14 +359,14 @@ attached_nodes = PackedInt32Array(137, 152, 149, 144, 135)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_t2730"]
 linked_parent_graph_frame = 171
-size = Vector2(1644, 397)
+size = Vector2(1644, 122)
 title = "Cone 2"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(44, 153, 150, 146, 140, 138)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_urdxf"]
-size = Vector2(1824, 1737)
+size = Vector2(1824, 1462)
 title = "Cone Generation"
 tint_color_enabled = true
 tint_color = Color(0.145098, 0.145098, 0.145098, 0.74902)
@@ -374,7 +374,7 @@ attached_nodes = PackedInt32Array(145, 155, 148, 169, 168, 170)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_hegdy"]
 linked_parent_graph_frame = 175
-size = Vector2(1784, 632)
+size = Vector2(1784, 522)
 title = "Color / Brightness 3"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -382,7 +382,7 @@ attached_nodes = PackedInt32Array(111, 112, 113, 103, 100, 96, 95, 94, 93)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_ifqeq"]
 linked_parent_graph_frame = 175
-size = Vector2(1784, 632)
+size = Vector2(1784, 522)
 title = "Color / Brightness 2"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -390,35 +390,35 @@ attached_nodes = PackedInt32Array(108, 110, 109, 102, 99, 92, 91, 90, 89)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fiuwn"]
 linked_parent_graph_frame = 175
-size = Vector2(1784, 632)
+size = Vector2(1784, 522)
 title = "Color / Brightness 1"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(106, 107, 105, 101, 97, 88, 87, 86, 85)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_ed3dx"]
-size = Vector2(2104, 2472)
+size = Vector2(2104, 2362)
 title = "Set Color and Brightness"
 tint_color_enabled = true
 tint_color = Color(0.145098, 0.145098, 0.145098, 0.74902)
 attached_nodes = PackedInt32Array(104, 98, 174, 173, 172)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_81g7h"]
-size = Vector2(870, 1672)
+size = Vector2(864, 1362)
 title = "Color (1 & 2) - Vector Operation Selector (Add / Divide / Max)"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(121, 123, 119, 116, 117, 120, 115)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fryi8"]
-size = Vector2(890, 1672)
+size = Vector2(884, 1362)
 title = "Color (previous Mix & 3) - Vector Operation Selector (Add / Divide / Subtract)"
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
 attached_nodes = PackedInt32Array(126, 128, 122, 124, 134, 125, 127)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_edptb"]
-size = Vector2(1691, 868)
+size = Vector2(1664, 582)
 title = "Post Processing (Final Brightness & Saturation, Convert Color Format) "
 tint_color_enabled = true
 tint_color = Color(0.231373, 0.231373, 0.231373, 0.74902)
@@ -999,7 +999,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-1661.25, -1225.82)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(7680, -1420)
