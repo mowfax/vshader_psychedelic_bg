@@ -14,7 +14,7 @@ var export_action = bgshader_export
 
 func bgshader_import():
 	var import_shader: String = "res://params/bg_" + bg_type + "_" + bg_index + ".tres"
-	var material: ShaderMaterial = self.material
+	var bgmaterial: ShaderMaterial = self.material
 	
 	if FileAccess.file_exists(import_shader):
 		if ("circle" in import_shader) or ("spiral" in import_shader):
@@ -22,7 +22,7 @@ func bgshader_import():
 			var properties: Array = []
 			for property in circle.get_property_list():
 				properties.append(property.name)
-			material.shader = circle.shader_file
+			bgmaterial.shader = circle.shader_file
 			var uniforms: Array = self.material.shader.get_shader_uniform_list()
 			for uniform in uniforms:
 				if uniform.name.to_snake_case() in properties:
@@ -33,11 +33,11 @@ func bgshader_import():
 			var properties: Array = []
 			for property in cone.get_property_list():
 				properties.append(property.name)
-			material.shader = cone.shader_file
+			bgmaterial.shader = cone.shader_file
 			var uniforms: Array = self.material.shader.get_shader_uniform_list()
 			for uniform in uniforms:
 				if uniform.name.to_snake_case() in properties:
-					material.set_shader_parameter(uniform.name, cone.get(uniform.name.to_snake_case()))
+					bgmaterial.set_shader_parameter(uniform.name, cone.get(uniform.name.to_snake_case()))
 			
 		else:
 			print_rich("[color=red][b]Shadertype not recognized[/b][/color]")
@@ -57,7 +57,7 @@ func bgshader_export():
 	
 
 	var shader_path: String = self.material.shader.get_path()
-	var material: ShaderMaterial = self.material
+	var bgmaterial: ShaderMaterial = self.material
 	var uniforms: Array = self.material.shader.get_shader_uniform_list()
 	var bgshader_result: BGShader
 	var save_result: Error
@@ -70,8 +70,8 @@ func bgshader_export():
 				properties.append(property.name)
 			for uniform in uniforms:
 				if uniform.name.to_snake_case() in properties:
-					circle.set(uniform.name.to_snake_case(), material.get_shader_parameter(uniform.name))
-			circle.shader_file = material.shader as VisualShader
+					circle.set(uniform.name.to_snake_case(), bgmaterial.get_shader_parameter(uniform.name))
+			circle.shader_file = bgmaterial.shader as VisualShader
 			circle.screenshot =  load(export_preview)
 			save_result = ResourceSaver.save(circle,export_shader)
 			bgshader_result = circle
@@ -83,8 +83,8 @@ func bgshader_export():
 				properties.append(property.name)
 			for uniform in uniforms:
 				if uniform.name.to_snake_case() in properties:
-					cone.set(uniform.name.to_snake_case(), material.get_shader_parameter(uniform.name))
-			cone.shader_file = material.shader as VisualShader
+					cone.set(uniform.name.to_snake_case(), bgmaterial.get_shader_parameter(uniform.name))
+			cone.shader_file = bgmaterial.shader as VisualShader
 			cone.screenshot =  load(export_preview)
 			save_result = ResourceSaver.save(cone,export_shader)
 			bgshader_result = cone
@@ -106,7 +106,7 @@ func bgshader_export():
 		# Generate Preview Image
 		subviewport = get_parent().get_viewport()
 		image = subviewport.get_texture().get_image()
-		image.resize(320,200,3)
+		image.resize(320,200,Image.INTERPOLATE_TRILINEAR)
 		image.save_png(export_preview)
 		print_rich("[color=green][b]Screenshot created, please run script again to save the shader.[/b][/color]")
 		
